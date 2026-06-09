@@ -1,6 +1,6 @@
 {
   "name": "bilibili-audio-mode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bilibili Audio Only Mode",
   "homepage": "https://github.com/Yrobot/bilibili-audio-mode",
   "type": "module",
