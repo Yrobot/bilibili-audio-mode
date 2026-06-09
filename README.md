@@ -16,7 +16,7 @@ B站音频模式油猴脚本 - 隐藏视频画面，只播放音频
 
 1. 安装油猴扩展（[Tampermonkey](https://www.tampermonkey.net/) / [Violentmonkey](https://violentmonkey.github.io/)）
 2. 点击下方链接安装脚本：
-   - [点击安装 Bilibili Audio Mode](https://raw.githubusercontent.com/Yrobot/bilibili-audio-mode/main/dist/bilibili-audio-mode.user.js)
+   - [点击安装 Bilibili Audio Mode](https://sink.proddig.com/bilibili-audio-mode)
 3. 在油猴扩展确认页面点击「安装」
 
 > 脚本支持自动更新，push 新版本后油猴扩展会自动检测并提示升级。
