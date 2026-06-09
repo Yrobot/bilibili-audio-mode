@@ -92,25 +92,16 @@ export class AudioModeController {
 
   /**
    * 启动样式保护循环
-   * 
-   * B站播放器会在页面刷新后重置 video 元素的样式，
+   *
+   * B站播放器会在任意时刻重置 video 元素的样式，
    * 导致我们设置的 visibility: hidden 丢失。
-   * 此方法每 300ms 检测一次，如果发现样式被重置，立即重新应用。
-   * 最多运行 15 秒后自动停止。
+   * 此方法每秒检测一次，如果发现样式被重置，立即重新应用。
+   * 永不停止，确保视频画面不会意外显示。
    */
   private startEnsureLoop(): void {
     this.stopEnsureLoop()
 
-    const startTime = Date.now()
-    const MAX_WAIT = 15000 // 最大等待时间 15 秒
-
     this.ensureTimer = setInterval(() => {
-      // 超时自动清理
-      if (Date.now() - startTime > MAX_WAIT) {
-        this.stopEnsureLoop()
-        return
-      }
-
       const video = this.findVideoElement()
       if (!video) return
 
@@ -119,7 +110,7 @@ export class AudioModeController {
         this.state.videoElement = video
         this.applyAudioMode()
       }
-    }, 300)
+    }, 1000)
   }
 
   /**
