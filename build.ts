@@ -1,3 +1,4 @@
+/// <reference types="node" />
 import { build } from "esbuild";
 import { readFileSync, writeFileSync, mkdirSync } from "fs";
 
