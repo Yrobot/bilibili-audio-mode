@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Bilibili Audio Mode
 // @namespace    https://github.com/Yrobot
-// @version      1.0.0
+// @version      1.0.1
 // @description  B站音频模式 - 节省带宽和系统资源
 // @author       @yrobot
 // @homepage     https://github.com/Yrobot/bilibili-audio-mode
